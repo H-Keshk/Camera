@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera</title>
+    <Style>
+       body > div {
+            position: relative;
+            width: 500px;
+            height: 395px;
+            margin: 100px auto;
+        }
+        .flash {
+            position: relative;
+            width: 35%;
+            height: 65px;
+            margin: 0 auto;
+            border-top-left-radius: 13px;
+            border-top-right-radius: 13px;
+            background-color: #5e7d8b;
+            transform: perspective(250px) rotatex(42deg);
+            -webkit-transform: perspective(250px) rotatex(42deg);
+            -moz-transform: perspective(250px) rotatex(42deg);
+            -ms-transform: perspective(250px) rotatex(42deg);
+            -o-transform: perspective(250px) rotatex(42deg);
+        }
+        .flash::before {
+            position: absolute;
+            content: '';
+            width: 70%;
+            height: 30px;
+            top: 20px;
+            left: 27px;
+            border-radius: 6px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            -ms-border-radius: 6px;
+            -o-border-radius: 6px;
+            background-color: #c5c5c5;
+            transform: perspective(200px) rotateX(-20deg);
+            -webkit-transform: perspective(200px) rotateX(-20deg);
+            -moz-transform: perspective(200px) rotateX(-20deg);
+            -ms-transform: perspective(200px) rotateX(-20deg);
+            -o-transform: perspective(200px) rotateX(-20deg);
+        }
+        .flash::after {
+            position: absolute;
+            content: '';
+            width: 18%;
+            height: 17px;
+            top: 27px;
+            left: 72px;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+            background-color: #5e7d8b;
+            transform: perspective(200px) rotateX(-20deg);
+            -webkit-transform: perspective(200px) rotateX(-20deg);
+            -moz-transform: perspective(200px) rotateX(-20deg);
+            -ms-transform: perspective(200px) rotateX(-20deg);
+            -o-transform: perspective(200px) rotateX(-20deg);
+        }
+        .body-and-btn {
+            position: relative;
+            width: 100%;
+            height: 84%;
+            margin-top: -6px;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            background: linear-gradient(180deg, #c5c5c5 25%, #5e7d8b 25%, #5e7d8b 75%, #c5c5c5 75%);
+        }
+        .body-and-btn::before {
+            position: absolute;
+            content: '';
+            width: 55px;
+            height: 15px;
+            top: -15px;
+            left: 27px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            background-color: #5e7b8d;
+        }
+        .body-and-btn::after {
+            position: absolute;
+            content: '';
+            width: 38px;
+            height: 4px;
+            top: -18px;
+            left: 35px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            background-color: #ff0080;
+        }
+        .lens {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            top: 145px;
+            left: 160px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            background: #4b4b4b;
+            border: 15px solid #d5d5d5;
+            outline: 15px solid white;
+            box-shadow: 0px 0px 16px 16px #4d4d4d;
+        }
+        .lens::before {
+            position: absolute;
+            content: '';
+            width: 100px;
+            height: 100px;
+            top: 24px;
+            left: 24px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            background-color: #358fb6;
+        }
+        .lens::after {
+            position: absolute;
+            content: '';
+            width: 25px;
+            height: 25px;
+            top: 42px;
+            left: 37px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            background-color: #68b8db;
+        }
+    </Style>
+</head>
+<body>
+    <div>
+        <div class="flash"></div>
+        <div class="body-and-btn"></div>
+        <div class="lens"></div>
+    </div>
+</body>
+</html>
